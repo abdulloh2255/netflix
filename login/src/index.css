@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer {
+  .site-container {
+    @apply max-w-7xl mx-auto py-10
+  }
+}
+
+#root {
+  background-color: bisque;
+  padding: 20px;
+  width: 880px;
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.children {
+  display: flex;
+  gap: 30px;
+}
+
+.forms label {
+  display: block;
+}
+
+.forms label span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.forms form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.forms form input {
+  padding: 5px 10px;
+  font-family: inherit;
+  font-size: 18px;
+}
+
+.forms form button {
+  align-self: flex-start;
+  background-color: royalblue;
+  color:aliceblue;
+  border: 0;
+  padding: 8px 12px;
+  border-radius: 2px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+
+a.active {
+  text-decoration: underline; font-size: medium;
+}
+
+button :hover {
+  background-color: navy;
+}
